@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts y Estilos (Hojas de Estilo CSS)</title>
+    <link rel="stylesheet" href="script.css"> <!-- Asegúrate de tener el archivo styles.css -->
+</head>
+
+<body style="background-image: url(imagenes/img2.jpeg); background-size: cover;">
+    <!-- Enlace de regreso -->
+    <div class="regreso">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\html.html">Regresar a la Página Principal</a>
+    </div>
+
+    <!-- Título principal -->
+    <h1 class="title2">Scripts y Estilos (Hojas de Estilo CSS)</h1>
+
+    <!-- Contenedor de introducción -->
+    <div class="contenedor introduccion">
+        <h2 class="title3">Introducción</h2>
+        <p>
+            En desarrollo web, los scripts y las hojas de estilo CSS son fundamentales para crear interfaces atractivas
+            y funcionales.
+            Los scripts permiten la interactividad en las páginas web, mientras que las hojas de estilo definen la
+            presentación visual de los elementos HTML.
+        </p>
+    </div>
+
+    <!-- Contenedor para Scripts -->
+    <div class="contenedor">
+        <h2 class="title3">¿Qué son los Scripts?</h2>
+        <p>
+            Los scripts son pequeños programas que se ejecutan en el navegador del usuario para proporcionar
+            interactividad a una página web.
+            El lenguaje de programación más comúnmente utilizado para scripts en el navegador es JavaScript.
+        </p>
+        <h3>Ejemplo de Script</h3>
+        <pre><code class="language-javascript">
+            // Este script muestra un mensaje de alerta
+            function mostrarMensaje() {
+                alert('¡Hola, bienvenido a nuestra página!');
+            }
+            mostrarMensaje();
+        </code></pre>
+    </div>
+
+    <!-- Contenedor para Estilos CSS -->
+    <div class="contenedor">
+        <h2 class="title3">¿Qué son las Hojas de Estilo CSS?</h2>
+        <p>
+            CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación de un documento HTML.
+            Permite definir estilos como colores, fuentes, márgenes, y más.
+        </p>
+        <h3>Ejemplo de Estilo CSS</h3>
+        <pre><code class="language-css">
+            /* Este CSS establece un fondo y un color de texto */
+            body {
+                background-color: #f0f0f0;
+                color: #333;
+            }
+            h1 {
+                color: #df4d0a;
+            }
+        </code></pre>
+    </div>
+
+    <!-- Contenedor para Integración de Scripts y CSS -->
+    <div class="contenedor">
+        <h2 class="title3">Integración de Scripts y CSS</h2>
+        <p>
+            Para utilizar JavaScript y CSS en una página HTML, puedes incluirlos en el `
+
+            <head>` o justo antes de la etiqueta `
+</body>`.
+Aquí hay un ejemplo de cómo incluir ambos:
+</p>
+
+<pre><code class="language-html"></code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+                &lt;script src="script.js"&gt;&lt;/script&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code></pre>
+
+<h2 class="title3">Recursos Adicionales</h2>
+<ul>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN Web Docs: CSS</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">MDN Web Docs: JavaScript</a></li>
+    <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools: CSS Tutorial</a></li>
+    <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools: JavaScript Tutorial</a></li>
+    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks: Guías y Artículos sobre CSS</a></li>
+</ul>
+
+<!-- Contenedor de Buenas Prácticas -->
+<div class="contenedor">
+    <h2 class="title3">Buenas Prácticas</h2>
+    <h4>Para CSS:</h4>
+    <ul>
+        <li>Usa nombres de clases y ID significativos.</li>
+        <li>Organiza tus estilos en secciones lógicas.</li>
+        <li>Evita el uso excesivo de !important.</li>
+        <li>Utiliza preprocesadores CSS como SASS o LESS para un mejor manejo de estilos complejos.</li>
+    </ul>
+    <h4>Para JavaScript:</h4>
+    <ul>
+        <li>Escribe comentarios claros en tu código.</li>
+        <li>Usa funciones y módulos para organizar tu código.</li>
+        <li>Evita el uso de variables globales siempre que sea posible.</li>
+        <li>Realiza pruebas y depuración de tu código frecuentemente.</li>
+    </ul>
+</div>
+</div>
+
+<!-- Contenedor de Ejemplos de CSS Avanzado -->
+<div class="contenedor">
+    <h2 class="title3">Ejemplos de CSS Avanzado</h2>
+    <h4>Uso de Flexbox</h4>
+    <pre><code class="language-css">
+            .flex-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        </code></pre>
+
+    <h4>Uso de CSS Grid</h4>
+    <pre><code class="language-css">
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+        </code></pre>
+</div>
+
+<!-- Contenedor de Ejemplos Interactivos -->
+<div class="contenedor3">
+    <h2 class="title3">Ejemplos Interactivos</h2>
+    <p>
+        A continuación, puedes probar tu propio código JavaScript y CSS. Escribe tu código en los campos de texto y haz
+        clic en "Ejecutar" para ver el resultado.
+    </p>
+    <textarea id="codigo-css" rows="5" placeholder="Escribe tu CSS aquí..."></textarea>
+    <textarea id="codigo-js" rows="5" placeholder="Escribe tu JavaScript aquí..."></textarea>
+    <button id="ejecutar">Ejecutar</button>
+    <div id="resultado" class="ejemplo-texto"></div>
+</div>
+
+<script>
+    document.getElementById('ejecutar').addEventListener('click', function () {
+        const cssCode = document.getElementById('codigo-css').value;
+        const jsCode = document.getElementById('codigo-js').value;
+
+        // Aplicar CSS
+        const style = document.createElement('style');
+        style.appendChild(document.createTextNode(cssCode));
+        document.head.appendChild(style);
+
+        // Ejecutar JavaScript
+        try {
+            eval(jsCode);
+        } catch (error) {
+            document.getElementById('resultado').innerText = 'Error en el código: ' + error.message;
+            return;
+        }
+
+        // Mostrar resultado
+        document.getElementById('resultado').innerText = 'Código ejecutado con éxito.';
+    });
+</script>
+
+<!-- Contenedor de Preguntas Frecuentes -->
+<div class="contenedor">
+    <h2 class="title3">Preguntas Frecuentes (FAQ)</h2>
+    <h4>¿Qué es la diferencia entre CSS y JavaScript?</h4>
+    <p>CSS se utiliza para dar estilo a la presentación de una página web, mientras que JavaScript se utiliza para
+        agregar interactividad y lógica a la página.</p>
+
+    <h4>¿Cómo puedo incluir CSS en mi proyecto?</h4>
+    <p>Puedes incluir CSS en tu proyecto de tres maneras: usando una hoja de estilo externa, usando una etiqueta "style"
+        en el "head", o utilizando estilos en línea.</p>
+
+    <h4>¿Qué son las librerías y frameworks de CSS?</h4>
+    <p>Las librerías y frameworks de CSS son colecciones de estilos predefinidos que te ayudan a desarrollar interfaces
+        web más rápidamente, como Bootstrap y Tailwind CSS.</p>
+</div>
+
+<h3 class="title3">Temario de Categorías</h3>
+
+<div class="navegador">
+    <!-- Tarjeta con enlace -->
+
+    <div class="button-container">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas de Texto.html"
+            class="button">
+            Etiquetas para Texto
+        </a>
+    </div>
+
+    <div class="button-container">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Listas.html"
+            class="button">
+            Etiquetas para Listas
+        </a>
+    </div>
+
+    <div class="button-container">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Enlaces.html"
+            class="button">
+            Etiquetas para Enlaces
+        </a>
+    </div>
+
+    <div class="button-container">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Tablas.html"
+            class="button">
+            Etiquetas para Tablas
+        </a>
+    </div>
+
+    <div class="button-container">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Formularios.html"
+            class="button">
+            Etiquetas para Formularios
+        </a>
+    </div>
+
+    <div class="button-container">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Incrustar Contenido.html"
+            class="button">
+            Etiquetas para Incrustar Contenido
+        </a>
+    </div>
+
+    <div class="button-container">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas Semánticas.html"
+            class="button">
+            Etiquetas para Semantica
+        </a>
+    </div>
+</div>
+
+
+</body>
+
+</html>

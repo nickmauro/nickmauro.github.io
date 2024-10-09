@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas para Formularios en HTML</title>
+    <link rel="stylesheet" href="formularios.css">
+</head>
+
+<body style="background-image: url(imagenes/img6.jpg); background-size: auto;">
+    <!-- Enlace de regreso en la parte superior izquierda -->
+    <div class="regreso">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\index.html">Regresar</a>
+    </div>
+
+    <div class="contenedor">
+        <!-- Título principal -->
+        <h2 class="title2">Etiquetas para Formularios en HTML</h2>
+        <p>Los formularios en HTML permiten a los usuarios interactuar con un sitio web mediante el envío de datos. A
+            continuación, se presentan las principales etiquetas utilizadas en los formularios HTML.</p>
+
+        <!-- Tabla de etiquetas para formularios -->
+        <table>
+            <caption>Principales Etiquetas para Formularios</caption>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>&lt;form&gt;</code></td>
+                    <td>Define un formulario HTML.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;input&gt;</code></td>
+                    <td>Permite ingresar datos. El tipo de entrada se especifica con el atributo <code>type</code>.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;label&gt;</code></td>
+                    <td>Asocia una etiqueta de texto con un control de formulario.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;textarea&gt;</code></td>
+                    <td>Define un área de texto multilínea.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;button&gt;</code></td>
+                    <td>Define un botón clicable (enviar o resetear el formulario).</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;select&gt;</code></td>
+                    <td>Crea un menú desplegable.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;option&gt;</code></td>
+                    <td>Define una opción dentro del menú <code>&lt;select&gt;</code>.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;fieldset&gt;</code></td>
+                    <td>Agrupa elementos de un formulario.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;legend&gt;</code></td>
+                    <td>Proporciona un título para un grupo de elementos dentro de <code>&lt;fieldset&gt;</code>.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;datalist&gt;</code></td>
+                    <td>Define una lista de opciones predefinidas para un <code>&lt;input&gt;</code>.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;optgroup&gt;</code></td>
+                    <td>Agrupa opciones dentro de un <code>&lt;select&gt;</code>.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Ejemplos prácticos de etiquetas para formularios -->
+    <div class="contenedor2">
+        <h3>Ejemplos de Formularios en HTML</h3>
+
+        <!-- Ejemplo básico de formulario -->
+        <h4>Formulario Básico</h4>
+        <div class="form-container">
+            <div class="codigo-ejemplo">
+                <pre>
+    &lt;form action="/enviar-datos" method="POST"&gt;
+        &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+        &lt;input type="text" id="nombre" name="nombre"&gt;&lt;br&gt;
+    
+        &lt;label for="email"&gt;Correo Electrónico:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+    
+        &lt;label for="comentarios"&gt;Comentarios:&lt;/label&gt;
+        &lt;textarea id="comentarios" name="comentarios"&gt;&lt;/textarea&gt;&lt;br&gt;
+    
+        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+    &lt;/form&gt;
+                </pre>
+            </div>
+            <div class="form-visual">
+                <form action="/enviar-datos" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"><br>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios"></textarea><br>
+
+                    <button type="reset">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Ejemplo con diferentes tipos de input -->
+        <h4>Formulario con Diferentes Tipos de Input</h4>
+        <div class="form-container">
+            <div class="codigo-ejemplo">
+                <pre>
+    &lt;form action="/procesar" method="POST"&gt;
+        &lt;label for="fecha"&gt;Fecha de nacimiento:&lt;/label&gt;
+        &lt;input type="date" id="fecha" name="fecha_nacimiento"&gt;&lt;br&gt;
+    
+        &lt;label for="numero"&gt;Número de teléfono:&lt;/label&gt;
+        &lt;input type="tel" id="numero" name="telefono"&gt;&lt;br&gt;
+    
+        &lt;label for="color"&gt;Color favorito:&lt;/label&gt;
+        &lt;input type="color" id="color" name="color_favorito"&gt;&lt;br&gt;
+    
+        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+    &lt;/form&gt;
+                </pre>
+            </div>
+            <div class="form-visual">
+                <form action="/procesar" method="POST">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha_nacimiento"><br>
+
+                    <label for="numero">Número de teléfono:</label>
+                    <input type="tel" id="numero" name="telefono"><br>
+
+                    <label for="color">Color favorito:</label>
+                    <input type="color" id="color" name="color_favorito"><br>
+
+                    <button type="reset">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Ejemplo con menú desplegable -->
+        <h4>Formulario con Menú Desplegable</h4>
+        <div class="form-container">
+            <div class="codigo-ejemplo">
+                <pre>
+    &lt;form action="/seleccion"&gt;
+        &lt;label for="pais"&gt;País:&lt;/label&gt;
+        &lt;select id="pais" name="pais"&gt;
+            &lt;option value="mx"&gt;México&lt;/option&gt;
+            &lt;option value="us"&gt;Estados Unidos&lt;/option&gt;
+            &lt;option value="ca"&gt;Canadá&lt;/option&gt;
+        &lt;/select&gt;&lt;br&gt;
+    
+        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+    &lt;/form&gt;
+                </pre>
+            </div>
+            <div class="form-visual">
+                <form action="/seleccion">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="mx">México</option>
+                        <option value="us">Estados Unidos</option>
+                        <option value="ca">Canadá</option>
+                    </select><br>
+
+                    <button type="reset">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Ejemplo con fieldset y legend -->
+        <h4>Formulario con Fieldset y Legend</h4>
+        <div class="form-container">
+            <div class="codigo-ejemplo">
+                <pre>
+    &lt;form action="/info"&gt;
+        &lt;fieldset&gt;
+            &lt;legend&gt;Información Personal&lt;/legend&gt;
+            &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+            &lt;input type="text" id="nombre" name="nombre"&gt;&lt;br&gt;
+    
+            &lt;label for="edad"&gt;Edad:&lt;/label&gt;
+            &lt;input type="number" id="edad" name="edad"&gt;&lt;br&gt;
+        &lt;/fieldset&gt;
+    
+        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+    &lt;/form&gt;
+                </pre>
+            </div>
+            <div class="form-visual">
+                <form action="/info">
+                    <fieldset>
+                        <legend>Información Personal</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"><br>
+
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad"><br>
+                    </fieldset>
+
+                    <button type="reset">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor3">
+        <h2>Tipos de Input en Formularios HTML</h2>
+
+        <!-- Tabla con los tipos de input -->
+        <table>
+            <caption>Tipos de Input en Formularios</caption>
+            <thead>
+                <tr>
+                    <th>Tipo de Input</th>
+                    <th>Descripción</th>
+                    <th>Código</th>
+                    <th>Ejemplo Visual</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>text</code></td>
+                    <td>Campo de texto</td>
+                    <td>
+                        <div class="codigo-ejemplo">
+                            <pre>&lt;input type="text" placeholder="Escribe aquí"&gt;</pre>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-visual">
+                            <input type="text" placeholder="Escribe aquí">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>password</code></td>
+                    <td>Campo de contraseña</td>
+                    <td>
+                        <div class="codigo-ejemplo">
+                            <pre>&lt;input type="password" placeholder="Contraseña"&gt;</pre>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-visual">
+                            <input type="password" placeholder="Contraseña">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>email</code></td>
+                    <td>Campo de correo electrónico</td>
+                    <td>
+                        <div class="codigo-ejemplo">
+                            <pre>&lt;input type="email" placeholder="Correo electrónico"&gt;</pre>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-visual">
+                            <input type="email" placeholder="Correo electrónico">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>number</code></td>
+                    <td>Campo numérico</td>
+                    <td>
+                        <div class="codigo-ejemplo">
+                            <pre>&lt;input type="number" placeholder="Número"&gt;</pre>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-visual">
+                            <input type="number" placeholder="Número">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>date</code></td>
+                    <td>Campo de fecha</td>
+                    <td>
+                        <div class="codigo-ejemplo">
+                            <pre>&lt;input type="date"&gt;</pre>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-visual">
+                            <input type="date">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>color</code></td>
+                    <td>Selector de color</td>
+                    <td>
+                        <div class="codigo-ejemplo">
+                            <pre>&lt;input type="color"&gt;</pre>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-visual">
+                            <input type="color">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>file</code></td>
+                    <td>Campo para subir archivos</td>
+                    <td>
+                        <div class="codigo-ejemplo">
+                            <pre>&lt;input type="file"&gt;</pre>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-visual">
+                            <input type="file">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Navegador de categorías -->
+    
+    <div class="navegador">
+        <!-- Tarjetas con enlaces -->
+        <h3 class="titulonav">Temario de Categorías</h3>
+        
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas de Texto.html" class="button">
+                Etiquetas para Texto
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Listas.html" class="button">
+                Etiquetas para Listas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Enlaces.html" class="button">
+                Etiquetas para Enlaces
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Incrustar Contenido.html" class="button">
+                Etiquetas para Incrustar Contenido
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Tablas.html" class="button">
+                Etiquetas para Tablas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas Semánticas.html" class="button">
+                Etiquetas Semánticas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Script y Estilo.html" class="button">
+                Etiquetas para Scripts y Estilos
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

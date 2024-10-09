@@ -1,0 +1,199 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo ligeramente transparente */
+}
+
+/* Enlace de regreso */
+.regreso a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #df4d0a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.regreso a:hover {
+    background-color: white;
+    color: #df4d0a;
+    transform: scale(1.05);
+}
+
+/* Título principal */
+.title2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Contenedores generales */
+.introduccion,
+.contenedor {
+    max-width: 800px;
+    margin: 30px auto; /* Centra el contenedor en la página */
+    padding: 20px;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: black;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilo de tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+table th {
+    background-color: #df4d0a;
+    color: white;
+}
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Estilos para videos */
+video {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+}
+
+/* Ejemplos en vivo */
+.ejemplo-texto {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.ejemplo-texto p {
+    margin: 10px 0;
+}
+
+/* Contenedor para código interactivo */
+.contenedor2,
+.contenedor3, 
+.contenedor4,
+.contenedor5,
+.contenedor6 {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+textarea {
+    width: 97%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+
+/* Botón */
+button {
+    padding: 10px 15px;
+    background-color: #df4d0a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+    background-color: white;
+    color: #df4d0a;
+}
+
+/* Salida de código interactivo */
+#output {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-height: 100px;
+}
+
+/* Títulos para secciones adicionales */
+.title3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #df4d0a;
+}
+
+/* Navegador de secciones */
+.navegador {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 10px;
+}
+
+/* Estilo del título de navegación */
+.titulonav {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1 1 200px;
+}
+
+/* Estilo de los botones */
+.button {
+    background-color: white;
+    color: #df4d0a;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-wrap: break-word;
+    max-width: 200px;
+    flex: 1 1 auto;
+}
+
+.button:hover {
+    background-color: #df4d0a;
+    transform: scale(1.05);
+    color: white;
+}
+
+.button:active {
+    transform: scale(1);
+}

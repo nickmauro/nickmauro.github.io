@@ -1,0 +1,144 @@
+/* Estilo general */
+body {
+    background-image: url(imagenes/fondogif.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+/* Estilo para los contenedores */
+.text-container, .references-container {
+    background-color: rgba(51, 51, 51, 0.8); /* Gris oscuro con opacidad */
+    color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* Asegura que el contenedor no sea demasiado ancho */
+    text-align: center;
+}
+
+/* Estilo específico para el contenedor de texto */
+.text-container {
+    margin-top: 60px; /* Menos espacio arriba */
+}
+
+/* Estilo específico para el contenedor de referencias */
+.references-container a {
+    color: #00bcd4; /* Color cyan */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Mantener la animación de color y tamaño */
+}
+
+.references-container a:hover {
+    color: #ff5722; /* Color al pasar el ratón */
+    font-size: 1.1em; /* Aumentar el tamaño del texto en el hover */
+}
+
+/* Estilo del encabezado */
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Estilo del texto */
+h2 {
+    color: #fff;
+    margin: 0 0 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Estilo general de las tablas */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+/* Estilo específico para la tabla de categorías */
+.categoria-table th {
+    background-color: #00bcd4;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+/* Estilo general de las celdas de la tabla */
+th {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Estilo para los enlaces */
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #00bcd4;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff5722; /* Color al pasar el ratón */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Animación para el hover */
+}
+
+.zoo {
+    text-align: center; /* Para centrar el contenido dentro del contenedor zoo */
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 10px;
+    width: 80%; /* Controla el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center; /* Centra el botón verticalmente si es necesario */
+    margin: auto;
+}
+
+.button {
+    background-color: white;
+    color: green;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    width: auto; /* Ajuste automático para el tamaño del botón */
+}
+
+.button:hover {
+    background-color: green;
+    transform: scale(1.05);
+    color: white;
+}
+
+.button:active {
+    transform: scale(1);
+}
+
+.creadores {
+    text-align: center; /* Para centrar el contenido dentro del contenedor zoo */
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    border-radius: 10px;
+    width: 80%; /* Controla el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}

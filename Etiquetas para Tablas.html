@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+    <link rel="stylesheet" href="tablas.css">
+</head>
+
+<body style="background-image: url(imagenes/img4.jpg); background-size: cover;">
+
+    <!-- Enlace de regreso -->
+    <div class="regreso">
+        <a href="file:///C:/Users/jvmus/Desktop/ITCH/semestres/semestre7/P.Web/pagina/html/html.html">Regresar</a>
+    </div>
+
+    <!-- Título principal -->
+    <h1 class="title2">Tablas en HTML</h1>
+
+    <!-- Introducción -->
+    <div class="introduccion">
+        <p>Las tablas en HTML se utilizan para organizar información de manera estructurada en filas y columnas. Aunque
+            son más utilizadas para mostrar datos tabulares, también pueden ser útiles para organizar ciertos tipos de
+            contenido en la web.</p>
+        <p>A continuación, exploraremos las etiquetas más importantes relacionadas con tablas y cómo se utilizan en
+            HTML.</p>
+    </div>
+
+    <!-- Tabla de etiquetas básicas para tablas -->
+    <div class="contenedor">
+        <h2>Etiquetas Básicas para Tablas</h2>
+        <table>
+            <caption>Elementos de Tablas en HTML</caption>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Define el inicio de una tabla.</td>
+                    <td><code>&lt;table&gt;...&lt;/table&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Define una fila en una tabla.</td>
+                    <td><code>&lt;tr&gt;...&lt;/tr&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Define una celda de datos dentro de una fila.</td>
+                    <td><code>&lt;td&gt;Celda&lt;/td&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Define una celda de encabezado.</td>
+                    <td><code>&lt;th&gt;Encabezado&lt;/th&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Agrega un título a la tabla.</td>
+                    <td><code>&lt;caption&gt;Título&lt;/caption&gt;</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Atributos de tablas -->
+    <div class="contenedor">
+        <h2>Atributos de Tablas</h2>
+        <table>
+            <caption>Atributos de Tablas</caption>
+            <thead>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>border</td>
+                    <td>Agrega un borde a la tabla.</td>
+                    <td><code>&lt;table border="1"&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>cellpadding</td>
+                    <td>Define el espaciado dentro de una celda.</td>
+                    <td><code>&lt;table cellpadding="5"&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>cellspacing</td>
+                    <td>Define el espaciado entre celdas.</td>
+                    <td><code>&lt;table cellspacing="10"&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>colspan</td>
+                    <td>Permite que una celda se extienda por varias columnas.</td>
+                    <td><code>&lt;td colspan="2"&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>rowspan</td>
+                    <td>Permite que una celda se extienda por varias filas.</td>
+                    <td><code>&lt;td rowspan="3"&gt;</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Sección interactiva -->
+    <div class="contenedor2">
+        <h2>Ejemplo Completo de Tabla</h2>
+        <p>A continuación, un ejemplo completo de una tabla con encabezados, celdas combinadas y varios atributos
+            aplicados:</p>
+
+        <table border="1" cellpadding="5" cellspacing="5">
+            <caption>Reporte de Notas</caption>
+            <thead>
+                <tr>
+                    <th>Estudiante</th>
+                    <th>Asignatura</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">María López</td>
+                    <td>Matemáticas</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Historia</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td colspan="2">Exento</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Contenedor de código interactivo -->
+    <div class="contenedor3">
+        <h2>Prueba el Código</h2>
+        <textarea id="codeArea" rows="10" cols="50">
+            <table border="1" cellpadding="5" cellspacing="5">
+                <caption>Reporte de Notas</caption>
+                <thead>
+                    <tr>
+                        <th>Estudiante</th>
+                        <th>Asignatura</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">María López</td>
+                        <td>Matemáticas</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>Historia</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td colspan="2">Exento</td>
+                    </tr>
+                </tbody>
+            </table>
+        </textarea>
+        <button onclick="ejecutarCodigo()">Ejecutar Código</button>
+        <div id="output"></div>
+    </div>
+
+    <!-- Script para ejecutar código -->
+    <script>
+        function ejecutarCodigo() {
+            var codigo = document.getElementById("codeArea").value;
+            document.getElementById("output").innerHTML = codigo;
+        }
+    </script>
+
+    <h3 class="title3">Temario de Categorías</h3>
+
+    <div class="navegador">
+        <!-- Tarjeta con enlace -->
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas de Texto.html" class="button">
+                Etiquetas para Texto
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Listas.html" class="button">
+                Etiquetas para Listas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Enlaces.html" class="button">
+                Etiquetas para Enlaces
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Incrustar Contenido.html" class="button">
+                Etiquetas para Incrustar Contenido
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Formularios.html" class="button">
+                Etiquetas para Formularios
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas Semánticas.html" class="button">
+                Etiquetas Semánticas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Script y Estilo.html" class="button">
+                Etiquetas para Scripts y Estilos
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

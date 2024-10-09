@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas para Listas</title>
+    <link rel="stylesheet" href="Listas.css">
+
+</head>
+
+<body style="background-image: url(imagenes/img2.jpeg); background-size:cover;">
+    <!-- Enlace de regreso en la parte superior izquierda -->
+
+    <div class="regreso">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\html.html">Regresar</a>
+    </div>
+
+    <!-- Creación de la primera tabla dentro de un contenedor -->
+    <div class="text-container contenedor1">
+        <table>
+            <!-- Título -->
+            <caption>Etiquetas para Listas en HTML</caption>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;ul&gt; &lt;/ul&gt;</td>
+                    <td>Define una lista desordenada (con viñetas).</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt; &lt;/ol&gt;</td>
+                    <td>Define una lista ordenada (numerada).</td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt; &lt;/li&gt;</td>
+                    <td>Define un elemento dentro de una lista (&lt;ul&gt; o &lt;ol&gt;).</td>
+                </tr>
+                <tr>
+                    <td>&lt;dl&gt; &lt;/dl&gt;</td>
+                    <td>Define una lista de definiciones, que muestra términos y sus descripciones.</td>
+                </tr>
+                <tr>
+                    <td>&lt;dt&gt; &lt;/dt&gt;</td>
+                    <td>Define un término dentro de una lista de definiciones (&lt;dl&gt;).</td>
+                </tr>
+                <tr>
+                    <td>&lt;dd&gt; &lt;/dd&gt;</td>
+                    <td>Define una descripción para un término en una lista de definiciones (&lt;dl&gt;).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Creación de la segunda tabla dentro de otro contenedor -->
+
+    <div class="contenedor2">
+        <!-- Sección de texto en el costado derecho -->
+        <div class="texto-derecha">
+            <h2>Ejemplo visual de HTML aplicado a Listas</h2>
+            <p>Conocer las etiquetas de listas en HTML es fundamental para estructurar contenido de manera clara y
+                eficiente en una página web.
+                Al igual que las etiquetas de estructura general (como <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>,
+                etc.) definen la jerarquía
+                de un documento, las etiquetas de lista organizan información en conjuntos relacionados, ya sea de forma
+                ordenada o desordenada.</p>
+
+            <h3>¿Por qué son importantes las listas en HTML?</h3>
+            <ul>
+                <li><strong>Mejora la legibilidad:</strong> Presentan la información de forma más clara y concisa,
+                    facilitando la comprensión por parte del usuario.</li>
+                <li><strong>Facilita la navegación:</strong> Agrupan elementos relacionados, lo que ayuda al usuario a
+                    encontrar rápidamente la información que busca.</li>
+                <li><strong>Aumenta la accesibilidad:</strong> Los lectores de pantalla y otros asistentes tecnológicos
+                    pueden interpretar las listas y presentar la información de manera adecuada a usuarios con
+                    discapacidad visual.</li>
+                <li><strong>SEO:</strong> Las listas ayudan a los motores de búsqueda a entender mejor el contenido de
+                    una página, lo que puede mejorar el posicionamiento en los resultados de búsqueda.</li>
+            </ul>
+
+            <h3>Tipos de listas en HTML y sus etiquetas:</h3>
+            <dl>
+                <dt>&lt;ul&gt; ... &lt;/ul&gt;:</dt>
+                <dd>
+                    Utilizado para crear listas desordenadas, donde los elementos se presentan con viñetas (puntos).
+                    <ul>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                    </ul>
+                </dd>
+
+                <dt>&lt;ol&gt; ... &lt;/ol&gt;:</dt>
+                <dd>
+                    Utilizado para crear listas ordenadas, donde los elementos se presentan en un orden específico,
+                    numerado por defecto.
+                    <ol>
+                        <li>Primer ítem</li>
+                        <li>Segundo ítem</li>
+                        <li>Tercer ítem</li>
+                    </ol>
+                </dd>
+
+                <dt>&lt;li&gt; ... &lt;/li&gt;:</dt>
+                <dd>
+                    Utilizado para definir cada ítem dentro de una lista, ya sea desordenada o ordenada.
+                    <ul>
+                        <li>Ítem en una lista desordenada</li>
+                    </ul>
+                    <ol>
+                        <li>Ítem en una lista ordenada</li>
+                    </ol>
+                </dd>
+
+                <dt>&lt;dl&gt; ... &lt;/dl&gt;:</dt>
+                <dd>
+                    Utilizado para crear una lista de definiciones, donde se agrupan términos y descripciones.
+                    <dl>
+                        <dt>Término 1</dt>
+                        <dd>Definición del término 1</dd>
+                        <dt>Término 2</dt>
+                        <dd>Definición del término 2</dd>
+                    </dl>
+                </dd>
+
+                <dt>&lt;dt&gt; ... &lt;/dt&gt;:</dt>
+                <dd>
+                    Utilizado para definir un término dentro de una lista de definiciones.
+                    <dl>
+                        <dt>Término de ejemplo</dt>
+                        <dd>Descripción o definición del término.</dd>
+                    </dl>
+                </dd>
+
+                <dt>&lt;dd&gt; ... &lt;/dd&gt;:</dt>
+                <dd>
+                    Utilizado para proporcionar la descripción o definición de un término en una lista de definiciones.
+                    <dl>
+                        <dt>Término de ejemplo</dt>
+                        <dd>Descripción o definición del término.</dd>
+                    </dl>
+                </dd>
+            </dl>
+        </div>
+
+
+        <div class="codigo-ejemplo">
+            <pre>
+                &lt;dl&gt;
+                    &lt;dt&gt;&lt;ul&gt; ... &lt;/ul&gt;:&lt;/dt&gt;
+                    &lt;dd&gt;Utilizado para crear listas desordenadas, donde los elementos se presentan con viñetas (puntos).
+                        Ejemplo:
+                        &lt;ul&gt;
+                            &lt;li&gt;Elemento 1&lt;/li&gt;
+                            &lt;li&gt;Elemento 2&lt;/li&gt;
+                            &lt;li&gt;Elemento 3&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/dd&gt;
+                
+                    &lt;dt&gt;&lt;ol&gt; ... &lt;/ol&gt;:&lt;/dt&gt;
+                    &lt;dd&gt;Utilizado para crear listas ordenadas, donde los elementos se presentan en un orden específico,
+                        numerado por defecto. Ejemplo:
+                        &lt;ol&gt;
+                            &lt;li&gt;Primer ítem&lt;/li&gt;
+                            &lt;li&gt;Segundo ítem&lt;/li&gt;
+                            &lt;li&gt;Tercer ítem&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/dd&gt;
+                
+                    &lt;dt&gt;&lt;li&gt; ... &lt;/li&gt;:&lt;/dt&gt;
+                    &lt;dd&gt;Utilizado para definir cada ítem dentro de una lista, ya sea desordenada o ordenada. Ejemplos:
+                        &lt;ul&gt;
+                            &lt;li&gt;Ítem en una lista desordenada&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol&gt;
+                            &lt;li&gt;Ítem en una lista ordenada&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/dd&gt;
+                
+                    &lt;dt&gt;&lt;dl&gt; ... &lt;/dl&gt;:&lt;/dt&gt;
+                    &lt;dd&gt;Utilizado para crear una lista de definiciones, donde se agrupan términos y descripciones. Ejemplo:
+                        &lt;dl&gt;
+                            &lt;dt&gt;Término 1&lt;/dt&gt;
+                            &lt;dd&gt;Definición del término 1&lt;/dd&gt;
+                            &lt;dt&gt;Término 2&lt;/dt&gt;
+                            &lt;dd&gt;Definición del término 2&lt;/dd&gt;
+                        &lt;/dl&gt;
+                    &lt;/dd&gt;
+                
+                    &lt;dt&gt;&lt;dt&gt; ... &lt;/dt&gt;:&lt;/dt&gt;
+                    &lt;dd&gt;Utilizado para definir un término dentro de una lista de definiciones. Ejemplo:
+                        &lt;dl&gt;
+                            &lt;dt&gt;Término de ejemplo&lt;/dt&gt;
+                            &lt;dd&gt;Descripción o definición del término.&lt;/dd&gt;
+                        &lt;/dl&gt;
+                    &lt;/dd&gt;
+                
+                    &lt;dt&gt;&lt;dd&gt; ... &lt;/dd&gt;:&lt;/dt&gt;
+                    &lt;dd&gt;Utilizado para proporcionar la descripción o definición de un término en una lista de definiciones.
+                        Ejemplo:
+                        &lt;dl&gt;
+                            &lt;dt&gt;Término de ejemplo&lt;/dt&gt;
+                            &lt;dd&gt;Descripción o definición del término.&lt;/dd&gt;
+                        &lt;/dl&gt;
+                    &lt;/dd&gt;
+                &lt;/dl&gt;
+                                </pre>
+        </div>
+    </div>
+
+    <!-- Caja centrada con un enlace -->
+    <div class="caja-enlace">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\ejemplolistas.html">Ir al ejemplo visual</a>
+    </div>
+
+
+    <h3 class="title2">Temario de Categorías</h3>
+
+    <div class="navegador">
+        <!-- Tarjeta con enlace -->
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas de Texto.html" class="button">
+                Etiquetas para Texto
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Enlaces.html" class="button">
+                Etiquetas para Enlaces
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Formularios.html" class="button">
+                Etiquetas para Formularios
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Incrustar Contenido.html" class="button">
+                Etiquetas para Incrustar Contenido
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Tablas.html" class="button">
+                Etiquetas para Tablas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas Semánticas.html" class="button">
+                Etiquetas Semánticas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Script y Estilo.html" class="button">
+                Etiquetas para Scripts y Estilos
+            </a>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

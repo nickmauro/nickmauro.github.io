@@ -1,0 +1,219 @@
+/* Estilo para el enlace de regreso */
+/* Estilos generales para el contenedor "regreso" */
+.regreso {
+    display: flex;
+    justify-content: first baseline; /* Centra horizontalmente el contenido */
+    padding: 10px;
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 50px; /* Ajusta la altura del contenedor según necesites */
+    margin-top: 20px; /* Ajusta el margen superior si lo deseas */
+    margin: auto;
+    width: 80%; /* Ajusta el ancho del contenedor */
+    /*background-color: #333; /* Fondo oscuro para la caja */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el enlace */
+.regreso a {
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff5722; /* Color del texto */
+    background-color: #ffffff; /* Color de fondo del enlace */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Asegura que el texto esté centrado dentro del enlace */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Importante para que funcione la animación */
+}
+
+.regreso a:hover{
+    transform: scale(1.1); /* Agranda ligeramente el enlace */
+    background-color:#ff5722; /* Cambia el color de fondo durante el hover */
+    color: white;
+}
+
+/* Estilo para los contenedores de texto */
+.text-container{
+    background-color: rgba(51, 51, 51, 0.8); /* 80% de opacidad */
+    box-shadow: 20%;
+    color: white; /* Texto blanco */
+    padding: 10px; /* Espacio interno */
+    margin: auto; /* Margen automático para centrar */
+    width: 80%; /* Ancho del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.text-container {
+    margin-top: 30px;
+}
+/* Estilo para las tablas */
+table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Asegura que los bordes no se dupliquen */
+    margin: 0px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para el borde de la tabla */
+table, th, td {
+    border: 1px solid black; /* Borde de la tabla y celdas */
+}
+
+/* Estilo para el encabezado de la tabla */
+th {
+    background-color: #ff5722; /* Color de fondo para el encabezado */
+}
+
+/* Estilo para el título de la tabla */
+caption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content:flex-start;
+    align-items:flex-start;
+    font-size: 1.5em; /* Tamaño de fuente del título */
+    margin: 40px; /* Margen alrededor del título */
+}
+
+/* Estilo para la alineación del texto en las celdas */
+th, td {
+    padding: 10px; /* Espacio interno en las celdas */
+    text-align: center; /* Centra el texto en las celdas */
+}
+
+/* Estilo para la segunda tabla con ejemplos */
+.ejemplos td {
+    text-align: left; /* Alineación del texto en la segunda tabla */
+}
+
+.contenedor2 {
+    display:block;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto; /* Centra el contenedor en la página */
+    padding: 10px;
+    padding-right: 10px;
+    background-color: #ffffff; /* Fondo gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.codigo-ejemplo {
+    width: auto; /* Ajusta el ancho del código */
+    background-color: #333; /* Fondo gris oscuro */
+    color: #ff8b51; /* Texto blanco */
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto; /* Para permitir desplazamiento horizontal si el código es demasiado largo */
+    font-family: 'Courier New', Courier, monospace; /* Fuente monospace para código */
+}
+
+.codigo-ejemplo pre {
+    white-space: pre-wrap; /* Permite que el texto se ajuste a las líneas */
+    word-wrap: break-word;
+}
+
+.texto-derecha {
+    width: 95%; /* Ajusta el ancho del texto */
+    padding-left: 20px; /* Espaciado a la izquierda */
+}
+
+.texto-derecha h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.texto-derecha p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.caja-enlace {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.caja-enlace a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #ff5722; /* Color del botón */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Importante para que funcione la animación */
+}
+
+/* Efecto hover sobre el enlace */
+.caja-enlace a:hover {
+    transform: scale(1.1); /* Agranda ligeramente el enlace */
+    background-color: white; /* Cambia el color de fondo durante el hover */
+    color: #ff5722;
+}
+
+.title2{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+/* Estilos para el contenedor de botones */
+.navegador {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten en múltiples filas */
+    gap: 20px; /* Espacio entre los botones */
+    width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+    padding: 20px;
+    justify-content: center; /* Centra los botones dentro del contenedor */
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 10px;
+}
+
+
+/* Estilos para los botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    flex: 1 1 200px; /* Permite que los botones crezcan y se reduzcan, con un ancho base de 200px */
+}
+
+.button {
+    background-color:#ff5722; /* Color del botón */
+    color: white; /* Color del texto */
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-wrap: break-word; /* Rompe palabras largas para evitar desbordamiento */
+    max-width: 200px; /* Evita que los botones crezcan más allá de este tamaño */
+    flex: 1 1 auto; /* Permite que los botones se ajusten dentro del contenedor */
+}
+
+
+.button:hover {
+    background-color: gold; /* Color del botón al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandamiento al hacer hover */
+    color: #6f22ff;
+}
+
+.button:active {
+    transform: scale(1); /* Efecto de retorno al tamaño original al hacer clic */
+}
+
+
+

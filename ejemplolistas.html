@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo de uso de etiquetas de listas en HTML.">
+    <meta name="author" content="Tu Nombre">
+    <title>Ejemplo de Listas en HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header,
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        ul,
+        ol {
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        dl {
+            margin: 10px 0;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            margin: 0 0 10px 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .button {
+            background-color: #ff5722;
+            /* Color del botón */
+            color:white;
+            /* Color del texto */
+            padding: 20px 100px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 30px;
+        }
+
+
+        .button:hover {
+            background-color: #007bff;
+            /* Color del botón al pasar el ratón */
+            transform: scale(1.05);
+            /* Efecto de agrandamiento al hacer hover */
+            color: white;
+        }
+
+        .button:active {
+            transform: scale(1);
+            /* Efecto de retorno al tamaño original al hacer clic */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo de Listas en HTML</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ejemplo visual de HTML aplicado a Listas</h2>
+
+            <h3>Tipos de listas en HTML y sus etiquetas:</h3>
+            <dl>
+                <dt>&lt;ul&gt; ... &lt;/ul&gt;:</dt>
+                <dd>Utilizado para crear listas desordenadas, donde los elementos se presentan con viñetas (puntos).
+                    Ejemplo:
+                    <ul>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                    </ul>
+                </dd>
+
+                <dt>&lt;ol&gt; ... &lt;/ol&gt;:</dt>
+                <dd>Utilizado para crear listas ordenadas, donde los elementos se presentan en un orden específico,
+                    numerado por defecto. Ejemplo:
+                    <ol>
+                        <li>Primer ítem</li>
+                        <li>Segundo ítem</li>
+                        <li>Tercer ítem</li>
+                    </ol>
+                </dd>
+
+                <dt>&lt;li&gt; ... &lt;/li&gt;:</dt>
+                <dd>Utilizado para definir cada ítem dentro de una lista, ya sea desordenada o ordenada. Ejemplos:
+                    <ul>
+                        <li>Ítem en una lista desordenada</li>
+                    </ul>
+                    <ol>
+                        <li>Ítem en una lista ordenada</li>
+                    </ol>
+                </dd>
+
+                <dt>&lt;dl&gt; ... &lt;/dl&gt;:</dt>
+                <dd>Utilizado para crear una lista de definiciones, donde se agrupan términos y descripciones. Ejemplo:
+                    <dl>
+                        <dt>Término 1</dt>
+                        <dd>Definición del término 1</dd>
+                        <dt>Término 2</dt>
+                        <dd>Definición del término 2</dd>
+                    </dl>
+                </dd>
+
+                <dt>&lt;dt&gt; ... &lt;/dt&gt;:</dt>
+                <dd>Utilizado para definir un término dentro de una lista de definiciones. Ejemplo:
+                    <dl>
+                        <dt>Término de ejemplo</dt>
+                        <dd>Descripción o definición del término.</dd>
+                    </dl>
+                </dd>
+
+                <dt>&lt;dd&gt; ... &lt;/dd&gt;:</dt>
+                <dd>Utilizado para proporcionar la descripción o definición de un término en una lista de definiciones.
+                    Ejemplo:
+                    <dl>
+                        <dt>Término de ejemplo</dt>
+                        <dd>Descripción o definición del término.</dd>
+                    </dl>
+                </dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Listas en html. Jaguares del TEC.</p>
+    </footer>
+
+    <div class="button-container">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Listas.html" class="button">Regresar</a>
+    </div>
+</body>
+
+</html>

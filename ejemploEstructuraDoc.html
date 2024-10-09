@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo de un documento HTML utilizando varias etiquetas estructurales.">
+    <meta name="author" content="Tu Nombre">
+    <title>Ejemplo Completo de HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        nav,
+        footer {
+            background-color: #fd6703;
+            color: rgb(248, 252, 250);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            color: aqua;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+            color: aqua;
+
+            .nav {
+                color: aqua;
+            }
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        aside {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .button {
+            background-color: #007bff;
+            /* Color del botón */
+            color: white;
+            /* Color del texto */
+            padding: 20px 100px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 30px;
+        }
+
+
+        .button:hover {
+            background-color: #ff5722;
+            /* Color del botón al pasar el ratón */
+            transform: scale(1.05);
+            /* Efecto de agrandamiento al hacer hover */
+            color: aliceblue;
+        }
+
+        .button:active {
+            transform: scale(1);
+            /* Efecto de retorno al tamaño original al hacer clic */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mí</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Introducción</h2>
+            <p>Este es un ejemplo de un documento HTML que incluye una variedad de etiquetas estructurales para
+                organizar el contenido de manera semántica.</p>
+        </section>
+
+        <section>
+            <h2>Contenido Principal</h2>
+            <article>
+                <h3>Artículo 1</h3>
+                <p>Este es el contenido de un artículo independiente que podría distribuirse de forma individual.</p>
+            </article>
+            <article>
+                <h3>Artículo 2</h3>
+                <p>Otro artículo con contenido propio. Cada artículo es una sección autónoma.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Información Adicional</h3>
+            <p>Este es un espacio para contenido complementario, como enlaces relacionados o anuncios.</p>
+        </aside>
+
+        <section>
+            <h2>Datos en Tablas</h2>
+            <table>
+                <caption>Ejemplo de Tabla</caption>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                        <th>Columna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dato A</td>
+                        <td>Dato B</td>
+                        <td>Dato C</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+    <div class="button-container">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Estructura del Documento.html" class="button">Regresar</a>
+    </div>
+</body>
+
+</html>

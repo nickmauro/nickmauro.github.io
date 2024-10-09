@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrustar Contenido en HTML</title>
+    <link rel="stylesheet" href="incrustar.css">
+</head>
+
+<body style="background-image: url(imagenes/img5.jpg); background-size: cover;">
+
+    <!-- Enlace de regreso -->
+    <div class="regreso">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\index.html">Regresar</a>
+    </div>
+
+    <!-- Introducción -->
+    <div class="introduccion">
+        <h1 class="title2">Incrustar Contenido en HTML</h1>
+
+        <p>Incrustar contenido en HTML te permite integrar elementos externos dentro de una página web. Estos elementos
+            pueden ser videos, audios, otros documentos HTML, aplicaciones externas o incluso gráficos y animaciones
+            interactivas.</p>
+        <p>Las etiquetas más comunes para incrustar contenido incluyen <code>&lt;iframe&gt;</code>,
+            <code>&lt;embed&gt;</code>, <code>&lt;object&gt;</code>, así como etiquetas multimedia como
+            <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code>.</p>
+    </div>
+
+    <!-- Tabla de etiquetas para incrustar contenido -->
+    <div class="contenedor">
+        <h2>Etiquetas Comunes</h2>
+        <table>
+            <caption>Etiquetas para Incrustar Contenido</caption>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;iframe&gt;</td>
+                    <td>Incrusta otro documento HTML o contenido web en la página.</td>
+                    <td><code>&lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;embed&gt;</td>
+                    <td>Incrusta contenido externo como aplicaciones o archivos multimedia.</td>
+                    <td><code>&lt;embed src="video.mp4" width="400" height="300"&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;object&gt;</td>
+                    <td>Incrusta contenido como aplicaciones o documentos externos.</td>
+                    <td><code>&lt;object data="document.pdf" width="600" height="400"&gt;&lt;/object&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>Incrusta un video dentro de la página.</td>
+                    <td><code>&lt;video controls&gt;&lt;source src="video.mp4"&gt;&lt;/video&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;audio&gt;</td>
+                    <td>Incrusta un archivo de audio dentro de la página.</td>
+                    <td><code>&lt;audio controls&gt;&lt;source src="audio.mp3"&gt;&lt;/audio&gt;</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Sección interactiva -->
+    <div class="contenedor2">
+        <h2>Galería de Ejemplos en Vivo</h2>
+        <p>A continuación, puedes ver ejemplos de cómo se incrustan estos contenidos:</p>
+
+        <div class="ejemplo-texto">
+            <p>Incrustando un video:</p>
+            <p>intenta con lo siguiente:
+                <br><br>
+                video1.mp4
+                <br>
+                video2.mp4
+            </p>
+
+            <video controls width="320">
+                <source src="video1.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta <code>video</code>.
+            </video>
+
+            <p>Incrustando una página web:</p>
+            <iframe src="https://es.wikipedia.org/wiki/Wikipedia:Portada" width="100%" height="240"></iframe>
+
+            <p>Incrustando un archivo de audio:</p>
+            <p>intenta con lo siguiente:
+                <br><br>
+                audio1.mp4
+                <br>
+                audio2.mp4
+            </p>
+            <audio controls>
+                <source src="audio1.mp3" type="audio/mp3">
+                Tu navegador no soporta la etiqueta <code>audio</code>.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Contenedor de código interactivo -->
+    <div class="contenedor3">
+        <h2>Prueba el Código</h2>
+        <textarea id="codeArea" rows="10" cols="50" width="80%">
+<iframe src="https://example.com" width="80%" height="240"></iframe>
+        </textarea>
+        <button onclick="ejecutarCodigo()">Ejecutar Código</button>
+        <div id="output"></div>
+    </div>
+
+    <!-- Script para ejecutar código -->
+    <script>
+        function ejecutarCodigo() {
+            var codigo = document.getElementById("codeArea").value;
+            document.getElementById("output").innerHTML = codigo;
+        }
+    </script>
+
+    <h3 class="title3">Temario de Categorías</h3>
+
+    <div class="navegador">
+        <!-- Tarjeta con enlace -->
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas de Texto.html"
+                class="button">
+                Etiquetas para Texto
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Listas.html"
+                class="button">
+                Etiquetas para Listas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Enlaces.html"
+                class="button">
+                Etiquetas para Enlaces
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Tablas.html"
+                class="button">
+                Etiquetas para Tablas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Formularios.html"
+                class="button">
+                Etiquetas para Formularios
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas Semánticas.html"
+                class="button">
+                Etiquetas Semánticas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Script y Estilo.html"
+                class="button">
+                Etiquetas para Scripts y Estilos
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+/* Estilo para el enlace de regreso */
+.regreso {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+    margin: auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.regreso a {
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.regreso a:hover {
+    transform: scale(1.1);
+    background-color: green;
+    color: white;
+}
+
+
+/* Contenedor general */
+.contenedor {
+    display: block;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto; /* Centra el contenedor en la página */
+    padding: 10px;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: black;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.contenedor table caption{
+    color:green;
+}
+
+/* Contenedor para los ejemplos de código */
+.contenedor2 {
+    display: block;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para mostrar el código de ejemplo */
+.codigo-ejemplo {
+    width: auto;
+    background-color: #333;
+    color: aquamarine;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.codigo-ejemplo pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Estilo para mostrar la visualización del formulario */
+.form-visual {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.form-visual label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-visual input,
+.form-visual textarea,
+.form-visual select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo para los botones dentro de los formularios */
+.form-visual button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-visual button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para contenedor de cada formulario y ejemplo de código */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.codigo-ejemplo,
+.form-visual {
+    width: 45%;
+}
+
+/* Estilo para las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    background-color: #333;
+    color: white;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
+
+caption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.ejemplos td {
+    text-align: left;
+}
+
+/* Estilo para el contenedor de texto */
+.text-container {
+    background-color: #333;
+    color: green;
+    padding: 10px;
+    margin: auto;
+    width: auto;
+    border-radius: 8px;
+}
+
+/* Estilo para el texto de la derecha */
+.texto-derecha {
+    width: 95%;
+    padding-left: 20px;
+}
+
+.texto-derecha h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.texto-derecha p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Título */
+.title2 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: green;
+    font-size: 30px;
+    align-items: center;
+}
+
+/* Estilo para los botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1 1 200px;
+}
+
+.button {
+    background-color: white;
+    color: green;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-wrap: break-word;
+    max-width: 200px;
+    flex: 1 1 auto;
+}
+
+.button:hover {
+    background-color: aquamarine;
+    transform: scale(1.05);
+    color: black;
+}
+
+.button:active {
+    transform: scale(1);
+}
+
+/* Enlaces en contenedor2 */
+.contenedor2 a {
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.contenedor2 a:hover {
+    color: brown;
+    font-size: 1.1em;
+}
+
+/* Estilo para el contenedor3 */
+.contenedor3 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor3 table caption{
+    color: green;
+}
+/* Estilo para las tablas dentro del contenedor3 */
+.contenedor3 table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ajusta el ancho de las celdas */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mantener el ancho fijo para cada columna */
+.contenedor3 th, 
+.contenedor3 td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word; /* Permite que el texto largo se ajuste a la celda */
+    vertical-align: middle;
+}
+
+/* Permite el desplazamiento horizontal en los ejemplos de código */
+.contenedor3 .codigo-ejemplo {
+    background-color: #333;
+    color: aquamarine;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Habilita el scroll horizontal */
+    max-width: none; /* Limita el ancho máximo del código */
+    width: auto;
+    margin: 0, auto;
+}
+
+.contenedor3 .codigo-ejemplo pre {
+    white-space: pre-wrap; /* Permite el ajuste de líneas */
+    word-wrap: break-word;
+    width: auto;
+    max-width: none;
+}
+
+/* Ajustes para los ejemplos visuales */
+.contenedor3 .form-visual {
+    padding: 10px;
+    max-width: none; /* Limita el ancho máximo de los elementos visuales */
+    width: auto;
+    margin: 0,auto;
+    overflow-x: auto; /* Habilita el scroll horizontal si es necesario */
+}
+
+/* Ajustes para inputs dentro de ejemplos visuales */
+.contenedor3 .form-visual input,
+.contenedor3 .form-visual select {
+    width: 100%;
+    max-width: 250px; /* Limita el ancho de los inputs */
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid green;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Excepciones para inputs de tipo color y file */
+.contenedor3 .form-visual input[type="color"],
+.contenedor3 .form-visual input[type="file"] {
+    width: auto;
+    max-width: none;
+}
+
+.navegador {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 10px;
+}
+
+.titulonav{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    display: flex;
+    color: aquamarine;
+    font-size: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1 1 200px;
+}
+
+.button {
+    background-color: white;
+    color: green;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-wrap: break-word;
+    max-width: 200px;
+    flex: 1 1 auto;
+}
+
+.button:hover {
+    background-color: green;
+    transform: scale(1.05);
+    color:white;
+}
+
+.button:active {
+    transform: scale(1);
+}

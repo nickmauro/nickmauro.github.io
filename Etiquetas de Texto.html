@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas de Texto en HTML</title>
+    <link rel="stylesheet" href="texto.css">
+</head>
+
+<body style="background-image: url(imagenes/img4.jpg); background-size: auto;">
+
+    <!-- Enlace de regreso -->
+    <div class="regreso">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\html.html">Regresar</a>
+    </div>
+
+    <!-- Introducción -->
+    <div class="contenedor">
+        <div class="introduccion">
+            <h1 class="title2">Etiquetas de Texto en HTML</h1>
+            <p>En HTML, las etiquetas de texto permiten dar formato a la información presentada en la web. Desde
+                párrafos simples hasta texto con formato especial, las etiquetas de texto ayudan a estructurar el
+                contenido de manera comprensible y atractiva para los usuarios.</p>
+            <p>A continuación, veremos las etiquetas más comunes agrupadas por su función.</p>
+        </div>
+    </div>
+
+    <!-- Tabla de etiquetas de texto -->
+    <div class="contenedor">
+        <h2>Formato Básico</h2>
+        <table>
+            <caption>Etiquetas de Formato Básico</caption>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Define un párrafo.</td>
+                    <td><code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Inserta un salto de línea.</td>
+                    <td><code>&lt;p&gt;Primera línea.&lt;br&gt;Segunda línea.&lt;/p&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;hr&gt;</td>
+                    <td>Inserta una línea horizontal.</td>
+                    <td><code>&lt;hr&gt;</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Énfasis y Estilo</h2>
+        <table>
+            <caption>Etiquetas de Énfasis</caption>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Texto en negrita para énfasis fuerte.</td>
+                    <td><code>&lt;strong&gt;Texto en negrita.&lt;/strong&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Texto en cursiva para énfasis leve.</td>
+                    <td><code>&lt;em&gt;Texto en cursiva.&lt;/em&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Resalta el texto.</td>
+                    <td><code>&lt;mark&gt;Texto resaltado.&lt;/mark&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;small&gt;</td>
+                    <td>Reduce el tamaño del texto.</td>
+                    <td><code>&lt;small&gt;Texto pequeño.&lt;/small&gt;</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Estructura del Texto</h2>
+        <table>
+            <caption>Etiquetas para Estructurar Texto</caption>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;del&gt;</td>
+                    <td>Muestra texto tachado.</td>
+                    <td><code>&lt;del&gt;Texto eliminado.&lt;/del&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;ins&gt;</td>
+                    <td>Muestra texto subrayado.</td>
+                    <td><code>&lt;ins&gt;Texto insertado.&lt;/ins&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;sub&gt;</td>
+                    <td>Texto en subíndice.</td>
+                    <td><code>&lt;sub&gt;Texto en subíndice.&lt;/sub&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;sup&gt;</td>
+                    <td>Texto en superíndice.</td>
+                    <td><code>&lt;sup&gt;Texto en superíndice.&lt;/sup&gt;</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Sección interactiva -->
+    <div class="contenedor2">
+        <h2>Galería de Ejemplos en Vivo</h2>
+        <p>A continuación, puedes ver cómo se ven estas etiquetas aplicadas:</p>
+
+        <div class="ejemplo-texto">
+            <p><strong>Texto en negrita</strong></p>
+            <p><em>Texto en cursiva</em></p>
+            <p><mark>Texto resaltado</mark></p>
+            <p><del>Texto tachado</del> <ins>Texto subrayado</ins></p>
+            <p>Subíndice: H<sub>2</sub>O</p>
+            <p>Superíndice: x<sup>2</sup></p>
+        </div>
+    </div>
+
+    <!-- Contenedor de código interactivo -->
+    <div class="contenedor3">
+        <h2>Prueba el Código</h2>
+        <textarea id="codeArea" rows="10" cols="50">
+<p><strong>Texto en negrita</strong></p>
+<p><em>Texto en cursiva</em></p>
+        </textarea>
+        <button onclick="ejecutarCodigo()">Ejecutar Código</button>
+        <div id="output"></div>
+    </div>
+
+    <!-- Script para ejecutar código -->
+    <script>
+        function ejecutarCodigo() {
+            var codigo = document.getElementById("codeArea").value;
+            document.getElementById("output").innerHTML = codigo;
+        }
+    </script>
+
+    <h3 class="title2">Temario de Categorías</h3>    
+
+    <div class="navegador">
+        <!-- Tarjeta con enlace -->
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Listas.html" class="button">
+                Etiquetas para Listas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Enlaces.html" class="button">
+                Etiquetas para Enlaces
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Formularios.html" class="button">
+                Etiquetas para Formularios
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Incrustar Contenido.html" class="button">
+                Etiquetas para Incrustar Contenido
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Tablas.html" class="button">
+                Etiquetas para Tablas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas Semánticas.html" class="button">
+                Etiquetas Semánticas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Script y Estilo.html" class="button">
+                Etiquetas para Scripts y Estilos
+            </a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

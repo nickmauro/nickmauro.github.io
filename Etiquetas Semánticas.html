@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semántica en HTML</title>
+    <link rel="stylesheet" href="semantica.css">
+</head>
+
+<body style="background-image: url(imagenes/img2.jpeg); background-size: cover;">
+    <div class="regreso">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\index.html">Regresar a la página principal</a>
+    </div>
+
+    <div class="introduccion">
+        <h1 class="title">Semántica en HTML</h1>
+        <h2>¿Qué es la Semántica en HTML?</h2>
+        <p>La semántica en HTML se refiere al uso adecuado de las etiquetas HTML para describir el contenido de manera que tenga significado para los navegadores y otros dispositivos. Utilizar etiquetas semánticas mejora la accesibilidad y el SEO (optimización para motores de búsqueda) de una página web.</p>
+    </div>
+
+    <div class="contenedor">
+        <h2>Etiquetas Semánticas Comunes</h2>
+        <table>
+            <caption>Tabla de etiquetas semánticas</caption>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Define un encabezado para un documento o sección.</td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Define un conjunto de enlaces de navegación.</td>
+                </tr>
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>Representa el contenido principal del documento.</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>Define contenido independiente que podría ser distribuido de manera independiente.</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Define una sección del contenido con un encabezado temático.</td>
+                </tr>
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>Contenido relacionado con el contenido principal, como una barra lateral.</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Define un pie de página para un documento o sección.</td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Se usa para contener contenido gráfico, como imágenes o diagramas.</td>
+                </tr>
+                <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Proporciona una leyenda para el contenido dentro de &lt;figure&gt;.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="contenedor2">
+        <h2>Ejemplo de Uso de Etiquetas Semánticas</h2>
+        <article>
+            <h3>Ejemplo de Página Semántica</h3>
+            <pre>
+&lt;header&gt;
+    &lt;h1&gt;Título Principal&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#home"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#about"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#contact"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;section&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Artículo Semántico&lt;/h2&gt;
+            &lt;p&gt;Este es un artículo que tiene significado independiente.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;© 2024 Ejemplo de Semántica&lt;/p&gt;
+&lt;/footer&gt;
+            </pre>
+        </article>
+    </div>
+
+    <div class="contenedor3">
+        <h2>Beneficios de la Semántica en HTML</h2>
+        <ul>
+            <li>Mejora la accesibilidad para lectores de pantalla.</li>
+            <li>Facilita el mantenimiento del código.</li>
+            <li>Ayuda a los motores de búsqueda a comprender mejor el contenido.</li>
+            <li>Promueve mejores prácticas en desarrollo web.</li>
+        </ul>
+    </div>
+
+    <div class="contenedor4">
+        <h2>Ejemplo de Estructura Semántica Completa</h2>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Página Semántica&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Mi Blog&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#articulos"&gt;Artículos&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#sobre"&gt;Sobre mí&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section id="articulos"&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Artículo 1&lt;/h2&gt;
+                &lt;p&gt;Contenido del primer artículo.&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Artículo 2&lt;/h2&gt;
+                &lt;p&gt;Contenido del segundo artículo.&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+
+        &lt;aside&gt;
+            &lt;h3&gt;Información Adicional&lt;/h3&gt;
+            &lt;p&gt;Aquí puedes encontrar información relacionada.&lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 Mi Blog&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </div>
+
+    <div class="contenedor5">
+        <h2>Errores Comunes en el Uso de Semántica</h2>
+        <ul>
+            <li>Usar etiquetas de presentación, como &lt;b&gt; y &lt;i&gt;, en lugar de etiquetas semánticas como &lt;strong&gt; y &lt;em&gt;.</li>
+            <li>Omitir etiquetas semánticas importantes como &lt;header&gt;, &lt;footer&gt; y &lt;nav&gt;.</li>
+            <li>Usar múltiples niveles de encabezados sin un orden lógico (por ejemplo, &lt;h1&gt;, luego &lt;h3&gt; directamente).</li>
+            <li>Colocar todo el contenido dentro de &lt;div&gt;, en lugar de usar etiquetas semánticas adecuadas.</li>
+        </ul>
+    </div>
+
+    <div class="contenedor6">
+        <h2>Prácticas Recomendadas</h2>
+        <ul>
+            <li>Utilizar siempre etiquetas semánticas adecuadas para el tipo de contenido.</li>
+            <li>Organizar el contenido jerárquicamente utilizando encabezados de manera adecuada.</li>
+            <li>Comprobar la accesibilidad de tu sitio con herramientas de evaluación.</li>
+            <li>Hacer un uso responsable de las etiquetas &lt;aside&gt; y &lt;section&gt; para enriquecer el contenido sin redundancias.</li>
+        </ul>
+    </div>
+
+    
+    <h3 class="title3">Temario de Categorías</h3>
+
+    <div class="navegador">
+        <!-- Tarjeta con enlace -->
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas de Texto.html"
+                class="button">
+                Etiquetas para Texto
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Listas.html"
+                class="button">
+                Etiquetas para Listas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Enlaces.html"
+                class="button">
+                Etiquetas para Enlaces
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Tablas.html"
+                class="button">
+                Etiquetas para Tablas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Formularios.html"
+                class="button">
+                Etiquetas para Formularios
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Incrustar Contenido.html"
+                class="button">
+                Etiquetas para Incrustar Contenido
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Script y Estilo.html"
+                class="button">
+                Etiquetas para Scripts y Estilos
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
+

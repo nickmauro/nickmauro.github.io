@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas para Enlaces en HTML</title>
+    <link rel="stylesheet" href="enlaces.css">
+</head>
+
+<body style="background-image: url(imagenes/img4.jpg); background-size: cover;">
+    <!-- Enlace de regreso en la parte superior izquierda -->
+    <div class="regreso">
+        <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\html.html">Regresar</a>
+    </div>
+
+    <div class="contenedor">
+        <!-- Título principal -->
+        <h2 class="title2">Etiquetas para Enlaces en HTML</h2>
+        <p>Los enlaces son una parte esencial del desarrollo web, ya que permiten la navegación entre páginas web. En
+            HTML,
+            los enlaces se definen utilizando la etiqueta <code>&lt;a&gt;</code>.</p>
+
+        <!-- Explicación de la estructura básica de la etiqueta <a> -->
+        <div class="text-container">
+            <table>
+                <caption>Principales atributos de la etiqueta &lt;a&gt;</caption>
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>href</code></td>
+                        <td>Especifica la URL del destino del enlace.</td>
+                    </tr>
+                    <tr>
+                        <td><code>target</code></td>
+                        <td>Determina dónde abrir el enlace. Por ejemplo, <code>_blank</code> para abrir en una nueva
+                            pestaña.</td>
+                    </tr>
+                    <tr>
+                        <td><code>title</code></td>
+                        <td>Proporciona un texto descriptivo al pasar el ratón sobre el enlace.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Ejemplos prácticos de enlaces -->
+    <div class="contenedor2">
+        <h3>Ejemplos de enlaces</h3>
+        <p>A continuación, se muestra cómo crear un enlace básico en HTML:</p>
+        <pre class="codigo-ejemplo">
+&lt;a href="https://www.ejemplo.com" target="_blank" title="Ir al sitio web de Ejemplo"&gt;
+    Visitar Ejemplo
+&lt;/a&gt;
+    </pre>
+        <p>Este enlace abrirá una nueva pestaña:</p>
+        <a href="https://www.youtube.com/" target="_blank" title="Ir al sitio web de Ejemplo">Visitar Ejemplo</a>
+
+        <!-- Enlaces internos y externos -->
+        <h3>Enlaces internos y externos</h3>
+        <p>Los enlaces internos navegan entre las páginas de un mismo sitio web:</p>
+        <pre class="codigo-ejemplo">
+&lt;a href="pagina_interna.html"&gt;Enlace interno&lt;/a&gt;
+    </pre>
+        <p>Enlace interno de ejemplo:</p>
+        <a href="http://127.0.0.1:5500/html/ejemplo%20interno.html">Ir a una página interna</a>
+
+        <p>Los enlaces externos apuntan a sitios fuera del dominio actual:</p>
+        <pre class="codigo-ejemplo">
+&lt;a href="https://www.otroejemplo.com" target="_blank"&gt;Enlace externo&lt;/a&gt;
+    </pre>
+        <p>Enlace externo de ejemplo:</p>
+        <a href="http://127.0.0.1:5500/html/Etiquetas%20para%20Listas.html" target="_blank">Ir a un sitio externo</a>
+
+        <!-- Navegación usando anclajes -->
+        <h3>Navegación dentro de la misma página</h3>
+        <p>Los anclajes permiten llevar al usuario a una sección específica de la misma página. En el siguiente ejemplo,
+            se
+            enlaza a la Sección 2:</p>
+        <pre class="codigo-ejemplo">
+&lt;a href="#seccion2"&gt;Ir a la Sección 2&lt;/a&gt;
+
+&lt;h2 id="seccion2"&gt;Sección 2&lt;/h2&gt;
+    </pre>
+
+        <p>Enlace de ejemplo:</p>
+        <a href="#seccion2">Ir a la Sección 2</a>
+
+        <!-- Sección 2 para el anclaje -->
+        <h2 id="seccion2">Sección 2</h2>
+        <p>Este es el contenido de la Sección 2, que se ha enlazado desde arriba.</p>
+
+        <h3>Conclusión y Utilidad de los Enlaces en HTML</h3>
+        <p>Los <strong>enlaces en HTML</strong> son una herramienta fundamental en el desarrollo web, ya que permiten
+            conectar diferentes páginas dentro de un mismo sitio o a otros sitios web externos. Mediante el uso de la
+            etiqueta <code>&lt;a&gt;</code>, podemos ofrecer a los usuarios la capacidad de navegar entre contenidos de
+            manera fluida, mejorando la experiencia y accesibilidad de la web.</p>
+
+        <h3>Utilidad de los Enlaces en HTML</h3>
+        <ul>
+            <li><strong>Navegación</strong>: Los enlaces permiten la navegación entre diferentes secciones de una página
+                o entre distintas páginas de un sitio web.</li>
+            <li><strong>Redirección</strong>: Facilitan el acceso a contenido externo, como otros sitios web o recursos
+                adicionales.</li>
+            <li><strong>Anclajes</strong>: Permiten crear puntos de referencia dentro de una página, lo que facilita a
+                los usuarios llegar rápidamente a la información que buscan.</li>
+            <li><strong>SEO (Optimización en Motores de Búsqueda)</strong>: Los enlaces bien estructurados son un
+                componente clave para el SEO, ayudando a los motores de búsqueda a entender la estructura y la
+                relevancia del contenido en un sitio web.</li>
+        </ul>
+
+        <p>En resumen, los enlaces no solo son esenciales para la estructura y funcionalidad de un sitio web, sino que
+            también mejoran la <strong>usabilidad</strong> y <strong>experiencia del usuario</strong>, haciendo que la
+            web sea más interactiva y dinámica.</p>
+
+
+    </div>
+    <!-- Navegador de categorías -->
+    <h3 class="title2">Temario de Categorías</h3>
+    <div class="navegador">
+        <!-- Tarjetas con enlaces -->
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas de Texto.html" class="button">
+                Etiquetas para Texto
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Listas.html" class="button">
+                Etiquetas para Listas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Formularios.html" class="button">
+                Etiquetas para Formularios
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Incrustar Contenido.html" class="button">
+                Etiquetas para Incrustar Contenido
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Tablas.html" class="button">
+                Etiquetas para Tablas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas Semánticas.html" class="button">
+                Etiquetas Semánticas
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a href="C:\Users\jvmus\Desktop\ITCH\semestres\semestre7\P.Web\pagina\html\Etiquetas para Script y Estilo.html" class="button">
+                Etiquetas para Scripts y Estilos
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
